@@ -1,0 +1,8 @@
+#Function to retrieve a list of available rooms based on meeting size
+function getAvailableRooms(grid, meetingSize):
+    availableRooms = []
+    for each room in grid:
+        if room.capacity >= meetingSize and room.status == "available": 
+            availableRooms.append(room)
+    
+    return availableRooms
